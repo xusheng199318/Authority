@@ -1,4 +1,5 @@
 import com.alibaba.druid.pool.DruidDataSource;
+import com.xusheng.dao.CsUserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,16 @@ public class DaoTest {
     @Autowired
     private DruidDataSource dataSource;
 
+    @Autowired
+    private CsUserMapper csUserMapper;
+
     @Test
     public void testDataSource() throws SQLException {
         System.out.println(dataSource.getConnection());
+    }
+
+    @Test
+    public void testGetUser() {
+        System.out.println(csUserMapper.getUserByUsername("admin"));
     }
 }

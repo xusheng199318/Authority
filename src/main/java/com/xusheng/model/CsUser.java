@@ -40,4 +40,13 @@ public class CsUser {
     public void setPassword(String password) {
         this.password = password == null ? null : password.trim();
     }
+
+    @Override
+    public String toString() {
+        return "CsUser{" +
+                "userId=" + userId +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
+    }
 }

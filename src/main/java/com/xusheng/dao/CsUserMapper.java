@@ -27,4 +27,6 @@ public interface CsUserMapper {
     int updateByPrimaryKeySelective(CsUser record);
 
     int updateByPrimaryKey(CsUser record);
+
+    CsUser getUserByUsername(String username);
 }

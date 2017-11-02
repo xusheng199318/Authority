@@ -1,0 +1,18 @@
+body {
+    background: url("../image/a.jpg") no-repeat;
+}
+
+#loginForm {
+    padding: 35px;
+    border-radius:15px;
+    background: #56666B;
+    color: #fff;
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+}
+#loginForm div {
+    margin-left: 30px;
+}
+
+
